@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activites.MusicScreen"
+        >
+        <info.abdolahi.CircularMusicProgressBar
+
+            android:id="@+id/album_art"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:border_color="#00796B"
+            android:src="@mipmap/ic_launcher"
+            app:border_width="4dp"
+            app:centercircle_diammterer="1"
+            app:progress_color="@color/colorAccent"
+            app:progress_startAngle="0"
+            app:draw_anticlockwise="false"
+            />
+
+        <ImageButton
+            android:id="@+id/music_Btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/album_art"
+            android:layout_marginTop="32dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_start"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            />
+    </RelativeLayout>
+</layout>
